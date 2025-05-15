@@ -299,6 +299,62 @@ header {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+/* Work/Products Section */
+.work .r-btn {
+  margin: 0 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.work .r-btn.active,
+.work .r-btn:hover {
+  background-color: #d16c6a !important;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.work .card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.work .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.work .card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.work .card-body {
+  padding: 15px;
+  background: #f8f9fa;
+}
+
+.work .card-body h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #343a40;
+}
+
+.work .card-body p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #6c757d;
+}
+
+.filtr-item {
+  padding: 10px;
+}
+
 /* Contact */
 .contact .r-icon {
   font-size: 50px;
