@@ -668,6 +668,7 @@
     <script src="lib/owl.carousel.min.js"></script>
     <script src="lib/typed.js"></script>
     <script src="lib/jquery.waypoints.min.js"></script>
+    <script src="js/app.js"></script>
     <script>
       // Direct filtering script
       $(document).ready(function() {
@@ -696,8 +697,13 @@
         
         // Activate "All" filter by default
         $('.filter-controls .btn[data-filter="all"]').trigger('click');
+        
+        // Re-initialize smooth scrolling
+        $('a[href^="#"]').smoothScroll({
+          speed: 2000,
+          offset: -70
+        });
       });
     </script>
-    <script src="js/app.js"></script>
   </body>
 </html>

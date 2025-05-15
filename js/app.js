@@ -84,7 +84,9 @@ $(document).ready(function () {
     startDelay: 1000,
   });
 
-  $("a").smoothScroll({
+  // Initialize smooth scroll only for navigation links to avoid conflicts
+  $(".navbar-nav a[href^='#']").smoothScroll({
     speed: 2000,
+    offset: -70,
   });
 });
